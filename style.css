@@ -141,9 +141,10 @@ header {
   opacity: 0;
   animation: moveBanner 1s 0.7s forwards;
 }
-
-
 @media (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+  }
   .banner p {
     font-size: 18px;
   }
@@ -244,6 +245,8 @@ header {
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 6rem);
   row-gap: 0.5rem;
+  
+
 }
 
 .conhecimento:nth-child(1) {
@@ -261,11 +264,6 @@ header {
 
 }
 
-@media (min-width: 768px) {
-  .conhecimento {
-    width: 50%; /* Dividir em duas colunas em telas maiores que 768px */
-  }
-}
 
 .conhecimento:nth-child(3) {
   grid-column: 4 / 7;
@@ -286,6 +284,7 @@ header {
   grid-column: 11 / 14;
   grid-row: 5 / -1;
 }
+
 
 .sessao-conhecimentos {
   background-color: #f5f5f5;
@@ -321,8 +320,9 @@ header {
 
 }
 
+
 .conhecimento-header i {
-  font-size: 2.5rem;
+  font-size: 48px;
   display: flex;
   flex-wrap: wrap;
 
@@ -330,18 +330,20 @@ header {
 
 .conhecimento-header h3 {
   font-family: var(--font-secundary);
-  font-size: 2rem;
+  font-size: 32px;
   padding-left: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
 
+
 .conhecimento-text {
   font-family: var(--font-secundary);
-  margin-top: 1rem;
+  margin-top: 16px;
 
   
 }
+
 
 .conhecimentos-img-wrapper {
   grid-column: 7 / 11;
@@ -664,3 +666,30 @@ footer{
   box-shadow:  0 0.1rem 0.6rem #00000009;
 }
 
+@media (max-width: 1000px) {
+  .conhecimento-header i {
+    font-size: 35px;
+  }
+  .conhecimento-header h3 {
+    font-size: 30px;
+  }
+  .conhecimento-text {
+    font-size: 13px;
+  }
+  }
+  
+
+@media (max-width: 768px) {
+  .conhecimento-header i {
+    font-size: 24px;
+  }
+  .conhecimento-header h3 {
+    font-size: 16px;
+  }
+  .conhecimento-text {
+    font-size: 6px;
+  }
+  }
+  
+
+ 
