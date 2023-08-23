@@ -364,6 +364,18 @@ header {
 
 }
 
+
+@media (max-width: 768px) {
+  .conhecimento {
+    display: grid;
+    width: calc(50% - 10px);
+  }.conhecimentos{
+    display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content:
+  }
+}
+
 .projetos {
   display: flex;
   justify-content: space-evenly;
@@ -667,7 +679,7 @@ footer{
   border-radius: .3rem;
   box-shadow:  0 0.1rem 0.6rem #00000009;
 }
-
+/* Permite que os letras diminua de tamanho quando a tela reduzida*/
 @media (max-width: 1000px) {
   .conhecimento-header i {
     font-size: 35px;
@@ -679,21 +691,16 @@ footer{
     font-size: 13px;
   }
   }
-  
-
-@media (max-width: 768px) {
-  .conhecimento-header i {
-    font-size: 24px;
-  }
-  .conhecimento-header h3 {
-    font-size: 16px;
-  }
-  .conhecimento-text {
-    font-size: 6px;
-  }
-  }
+  /* Permite que os itens quebrem para a próxima linha*/
   @media (max-width: 768px) {
     .projetos {
       display: grid;
+      width: calc(50% - 10px);
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content:center
+      
+
     }
-    
+  }
+  
