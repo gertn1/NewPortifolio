@@ -185,7 +185,7 @@ header {
 }
 
 .sidebar {
-  width: 20rem;
+  width: 15rem;
   height: 100vh;
   background-color: #fff;
   position: fixed;
@@ -224,7 +224,7 @@ header {
 
 .social-media {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -562,13 +562,16 @@ footer{
   width: 60%;
   display: flex;
   justify-content: space-between;
+
 }
 
 .footer-content p{
   font-family: var(--font-secundary);
   color: #a7a7a7;
   font-size: 1rem;
+  margin-bottom: 10px;
 }
+
 
 .social-list a{
   margin: 0 2rem;
