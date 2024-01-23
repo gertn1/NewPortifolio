@@ -616,9 +616,11 @@ footer{
     .projetos {
       
       width: calc(50% - 10px);
+      height: calc(50% - 10px);
       flex-wrap: wrap; 
       justify-content:center;
       margin-bottom: 20px;
+
     
     }
       
